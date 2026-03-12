@@ -1,0 +1,15 @@
+
+"""
+Sale list HTML template.
+"""
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Sale List</h2>
+<ul>
+    {% for sale in sales %}
+    <li>Sale ID: {{ sale.id }} - Total: {{ sale.total_price }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
